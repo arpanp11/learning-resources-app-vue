@@ -1,13 +1,16 @@
 <template>
+  <the-header title="Remember Me"></the-header>
   <stored-resource :resources="storedResources"> </stored-resource>
 </template>
 
 <script>
 import StoredResource from './components/learning-resources/StoredResource';
+import TheHeader from './components/layouts/TheHeader';
 
 export default {
   components: {
-    StoredResource
+    StoredResource,
+    TheHeader
   },
   data() {
     return {
